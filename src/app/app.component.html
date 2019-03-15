@@ -1,10 +1,6 @@
-<h2 class="text-warning">Hello, Mr.{{name}}</h2>
-
-<strong>Giới tính: 
-  <span *ngIf="gender==1">Nam</span>
-  <span *ngIf="gender==2">Nữ</span>
-  <span *ngIf="gender>2">Khác</span>
-</strong>
-<ul>
-  <li *ngFor="let item of classes">{{item.id}} - {{item.name}} - {{item.subj}}</li>
-</ul>
+<div *ngFor="let h of hero" class="hero-unit">
+  <h2>Name: {{h.name}} - {{h.id}}</h2>
+  <div *ngFor="let img of h.image">
+    <img [src]="img" width="200">
+  </div>
+</div>

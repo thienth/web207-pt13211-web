@@ -1,28 +1,25 @@
 import { Component } from '@angular/core';
-
+import {Hero} from './models/Hero';
 @Component({
   selector: 'app-web207',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  name = "Thienth";
-  gender = 2;
-  classes = [
+  hero: Hero[] = [
     {
       id: 1,
-      name: 'pt13211-web',
-      subj: "frontend framework",
+      name: 'Gao đỏ',
+      image: [
+        'assets/anh-1.jpeg'
+      ]
     },
     {
       id: 2,
-      name: 'pt13353-mob',
-      subj: "server cho android",
-    },
-    {
-      id: 3,
-      name: 'pt13354-mob',
-      subj: "server cho android",
+      name: 'Gao xanh',
+      image: [
+        'assets/anh-2.jpeg'
+      ]
     }
-  ];
+  ]
 }
