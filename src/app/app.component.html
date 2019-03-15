@@ -1,6 +1,4 @@
-<div *ngFor="let h of hero" class="hero-unit">
-  <h2>Name: {{h.name}} - {{h.id}}</h2>
-  <div *ngFor="let img of h.image">
-    <img [src]="img" width="200">
-  </div>
+<div class="hero-unit" *ngFor="let hero of heroes">
+  <h3>{{hero.name}}</h3>
+  <img [src]="hero.image" width="150">
 </div>
