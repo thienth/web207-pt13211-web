@@ -8,4 +8,6 @@ import { from } from 'rxjs';
 })
 export class AppComponent {
   heroes = HEROES;
+  classname = `fpt 
+                polytechnic`;
 }

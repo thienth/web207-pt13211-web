@@ -1,0 +1,7 @@
+<!-- <div class="" *ngFor="let hero of heroes">
+  <p>{{hero.name}} - {{hero.id}}</p>
+  <img [src]="hero.image" width="150">
+</div> -->
+<app-hero-unit *ngFor="let hero of heroes" 
+  [herodata]="hero"  
+></app-hero-unit>

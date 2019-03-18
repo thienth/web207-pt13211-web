@@ -21,3 +21,4 @@ export const HEROES: Hero[] = [
         image: 'https://www.sideshow.com/storage/product-images/903341/iron-man-mark-iv_marvel_gallery_5c4d05b24c8e6.jpg' 
     }
 ];
+
