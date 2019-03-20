@@ -7,7 +7,16 @@ import { from } from 'rxjs';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  heroes = HEROES;
-  classname = `fpt 
-                polytechnic`;
+  
+
+  count = 1;
+  status = false;
+
+  increaseCount(){
+    this.count++;
+  }
+
+  changeStatusValue(){
+    this.status = !this.status;
+  }
 }

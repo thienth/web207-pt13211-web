@@ -15,6 +15,6 @@ import { HeroUnitComponent } from './components/hero-unit/hero-unit.component';
     BrowserModule
   ],
   providers: [],
-  bootstrap: [HeroComponent] // sửa thành component muốn hiển thị đầu tiên
+  bootstrap: [AppComponent] // sửa thành component muốn hiển thị đầu tiên
 })
 export class AppModule { }

@@ -1,4 +1,4 @@
-<div class="hero-unit" *ngFor="let hero of heroes">
-  <h3>{{hero.name}}</h3>
-  <img [src]="hero.image" width="150">
-</div>
+<h2 (click)="increaseCount()">{{count}}</h2>
+<h2 *ngIf="status == false" (click)="changeStatusValue()">hello world!</h2>
+<input type="text" *ngIf="status == true" 
+  value="Hello world!" (blur)="changeStatusValue()">
