@@ -11,7 +11,7 @@ export class AppComponent {
 
   count = 1;
   status = false;
-
+  content = "";
   increaseCount(){
     this.count++;
   }
@@ -19,4 +19,5 @@ export class AppComponent {
   changeStatusValue(){
     this.status = !this.status;
   }
+  
 }

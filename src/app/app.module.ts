@@ -4,6 +4,8 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { HeroComponent } from './components/hero/hero.component';
 import { HeroUnitComponent } from './components/hero-unit/hero-unit.component';
+import {FormsModule} from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -12,7 +14,8 @@ import { HeroUnitComponent } from './components/hero-unit/hero-unit.component';
     HeroUnitComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent] // sửa thành component muốn hiển thị đầu tiên
