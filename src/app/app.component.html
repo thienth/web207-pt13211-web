@@ -1,16 +1,1 @@
-<h2 (click)="increaseCount()">{{count}}</h2>
-<h2 *ngIf="status == false" 
-  (click)="changeStatusValue()">
-  hello world!
-</h2>
-<input type="text" 
-  *ngIf="status == true" 
-  value="Hello world!" 
-  (blur)="changeStatusValue()">
-<input type="text" 
-  [(ngModel)]="content">
-<span class="text-danger" >
-  
-</span>
-
-<h2>{{content}}</h2>
+<router-outlet></router-outlet>
