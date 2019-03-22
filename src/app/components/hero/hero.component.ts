@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
+import {HEROES} from '../../models/hero-data';
+import {Hero} from '../../models/Hero';
+
 @Component({
   selector: 'app-hero',
   templateUrl: './hero.component.html',
@@ -7,9 +10,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeroComponent implements OnInit {
 
-  constructor() { }
+  ngOnInit(){
 
-  ngOnInit() {
   }
+  heroes: Hero[] = HEROES;
 
 }

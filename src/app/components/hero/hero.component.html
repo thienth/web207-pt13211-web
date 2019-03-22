@@ -1,4 +1,5 @@
-<p>
-  hero works!
-</p>
-<h3>Day la man hinh danh sach heroes</h3>
+<ul>
+  <li *ngFor="let hero of heroes">
+    <a routerLink="/detail-hero/{{hero.id}}">{{hero.name}}</a>
+  </li>
+</ul>
