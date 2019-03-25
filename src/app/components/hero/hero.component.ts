@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 
 import {HEROES} from '../../models/hero-data';
 import {Hero} from '../../models/Hero';
+import {CategoryService} from '../../services/category.service';
+import {Category} from '../../models/category.model';
 
 @Component({
   selector: 'app-hero',
@@ -10,9 +12,17 @@ import {Hero} from '../../models/Hero';
 })
 export class HeroComponent implements OnInit {
 
-  ngOnInit(){
+  heroes: Hero[] = HEROES;
+  cates: Category[];
+
+  constructor(private cateService: CategoryService){
 
   }
-  heroes: Hero[] = HEROES;
+  ngOnInit(){
+    var cates = this.cateService.getCategories();
+    console.log(cates);
+  }
+  
+
 
 }

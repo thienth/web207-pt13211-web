@@ -11,8 +11,12 @@ import {Hero} from '../../models/Hero';
 export class DetailHeroComponent implements OnInit {
   heroId: any = null;
   hero: Hero;
+
   constructor(private route: ActivatedRoute) {
+    // lay so id tu url xuong
     this.heroId = this.route.snapshot.paramMap.get("id");
+
+    // dua vao id lay dc tim ra hero dua vao id
     for(let i = 0; i < HEROES.length; i++){
       if(HEROES[i].id == this.heroId){
         this.hero = HEROES[i];

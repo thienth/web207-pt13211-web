@@ -8,4 +8,7 @@
     </li>
   </ul>
 </nav>
+<ul *ngIf="categories != undefined">
+  <li *ngFor="let cate of categories">{{cate.name}}</li>
+</ul>
 <router-outlet></router-outlet>
